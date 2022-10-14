@@ -13,4 +13,9 @@ module.exports = function(app) {
     '/booking',
     createProxyMiddleware(proxy)
   )
+
+  app.use(
+    '/booking/:id',
+    createProxyMiddleware(proxy)
+  )
 };
